@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+$primary-color:#a50a0b;
+$second-color:#c66a26;
+.btn-blue{
+    background-color: $primary-color;
+    color: white;
+    font-weight: bold;
+    border: 1px solid transparent;
+    transition: 0.5s ease-in-out;
+    &:hover{
+        background-color: white;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+    }
+}
+.btn-yellow{
+    background-color: $second-color;
+    color: white;
+    font-weight: bold;
+    border: 1px solid transparent;
+    transition: 0.5s ease-in-out;
+    &:hover{
+        background-color: white;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+    }
+}
+.link{
+    text-decoration:none;
+    color:white;
+    &:hover{
+        color: black !important;
+    }
+}
+
+@keyframes up {
+    0% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
